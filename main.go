@@ -10,11 +10,11 @@ import (
 )
 
 func main() {
-	prvKey, err := ioutil.ReadFile("cert/id_rsa")
+	prvKey, err := ioutil.ReadFile("./cert/id_rsa")
 	if err != nil {
 		log.Fatalln(err)
 	}
-	pubKey, err := ioutil.ReadFile("cert/id_rsa.pub")
+	pubKey, err := ioutil.ReadFile("./cert/id_rsa.pub")
 	if err != nil {
 		log.Fatalln(err)
 	}
